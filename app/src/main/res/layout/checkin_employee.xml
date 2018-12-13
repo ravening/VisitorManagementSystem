@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="#3F51B5"
+            android:text="@string/employee_Details"/>
+
+        <EditText
+            android:id="@+id/firstNameText"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:hint="@string/first_name" />
+
+        <EditText
+            android:id="@+id/lastNameText"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:hint="@string/last_name"/>
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:hint="@string/phone"/>
+
+        <EditText
+            android:id="@+id/departmentText"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/department"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/badgeNumberText"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:textSize="30dp"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:hint="@string/badge_numbner"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="174dp"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/checkin"
+                android:layout_width="0dip"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:gravity="center"
+                android:onClick="checkin"
+                android:padding="15dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/checkin_button"
+                android:textSize="35dp" />
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="0dip"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:gravity="center"
+                android:onClick="finish"
+                android:padding="15dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/cancel_button"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+        <!--<Button
+            android:id="@+id/checkin"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:textSize="35dp"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:onClick="checkin"
+            android:padding="15dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="30dp"
+            android:text="Checkin" />-->
+
+    </LinearLayout>
+
+</ScrollView>

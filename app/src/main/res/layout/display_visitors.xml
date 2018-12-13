@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0f7fa"
+    android:gravity="center_horizontal" >
+
+    <View
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#8DB3E1" />
+
+    <ListView
+        android:id="@+id/List"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/a"
+        android:divider="#8DB3E1"
+        android:dividerHeight="2dp" />
+
+</RelativeLayout>
